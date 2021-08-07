@@ -1,6 +1,7 @@
 package org.example
 
 fun main(args: Array<String>) {
-    println("Hello, World")
-}
+    val tester = DBConnection("jdbc:postgresql://localhost:5432/culture_fest", login, password)
 
+    tester.disconnect()
+}
